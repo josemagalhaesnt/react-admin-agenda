@@ -1,6 +1,8 @@
+import React from 'react';
 import { List, Datagrid, TextField, EmailField, UrlField } from 'react-admin';
 
 export const UserList = (props) => (
+	// eslint-disable-next-line react/jsx-props-no-spreading
 	<List {...props}>
 		<Datagrid rowClick="edit">
 			<TextField source="id" />
